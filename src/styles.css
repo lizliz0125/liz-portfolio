@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: "Rubik Mono One", monospace;
+  --font-ledger: "Ledger", serif;
+  /** 经历/正文：中英与数字混排，不用 Rubik Mono One */
+  --font-career: "Inter", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --color-red-custom: #DE2E2E;
+}
+
+@layer utilities {
+  html, body {
+    @apply overflow-x-hidden;
+  }
+
+  .pause {
+    animation-play-state: paused !important;
+  }
+
+  .parallax {
+    pointer-events: none;
+  }
+
+  .filter {
+    @apply before:content-[''] before:absolute before:inset-0 before:shadow-[inset_0_0_8px_1px_rgba(255,255,255,0.3)];
+  }
+}

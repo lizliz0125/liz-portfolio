@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+.vite/
+.env
+
+# 根目录本地素材草稿（未在源码中引用，勿提交）
+/0ce2ff707pa335979dbd26bc8089b2ea.JPEG
+/89d16baf8m2ebc0f3a273b608e588d11.JPG
+/9eba1acf6u6ca2b96b04ef072dbb56fd.JPG
+/1.png
