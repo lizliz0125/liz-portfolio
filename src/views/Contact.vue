@@ -5,6 +5,7 @@ import { useScrollContext } from '@/composables/useScrollContext'
 import { AnimatedComponent } from '@/services/AnimatedComponent';
 import CustomA from '@/components/CustomA.vue';
 import Parallax from '@/components/Parallax.vue';
+import LikeButton from '@/components/LikeButton.vue';
 import { useI18n } from '@/i18n';
 
 const { msg } = useI18n();
@@ -55,6 +56,12 @@ onBeforeUnmount(() => {
                     </div>
                 </div>
 
+                <!-- 点赞按钮：独立区块，居中 -->
+                <div class="flex justify-center items-center py-6">
+                    <LikeButton />
+                </div>
+
+                <!-- 大标题 -->
                 <div class="flex flex-col justify-center items-center text-[10dvw] leading-none w-full h-full font-rubik">
                     <h1 class="text-white">{{ msg.letsWork }}</h1>
                     <h1 class="text-red-custom z-10">{{ msg.together }}</h1>
